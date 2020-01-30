@@ -92,9 +92,11 @@ header .cont-header .logo .cont-logo .nombre {
     padding: 35vh 0;
     /* background: cadetblue;*/
     background: #112637;
-    background-size: 100%;
+    background-size: auto 150vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image: url(../imagenes/LilyBolivarLeft3.png);
+    background-position-y: initial;
 }
 
 .banner-img {
