@@ -1,0 +1,297 @@
+.header-sticky {
+    /*background: #5b286d;*/
+    background: linear-gradient(5deg, transparent 30%, #5b286d 100%);
+    transition: all .5s;
+}
+
+.header-sticky .cont-header .menu a {
+    /*color: #666;*/
+}
+
+.header-sticky .cont-header .menu a:hover {
+    /*color: #222;*/
+}
+
+header {
+    transition: all .5s;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+
+header .cont-header {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+}
+
+header .cont-header .menu {
+    float: right;
+    display: flex;
+    line-height: 70px;
+    padding: 17.5px;
+}
+
+header .cont-header .menu a {
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #eee;
+    font-family: "futura-pt", sans-serif;
+}
+
+header .cont-header .menu a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .cont-header .logo {
+    display: inline-block;
+}
+
+header .cont-header .logo .cont-logo {
+    display: flex;
+}
+
+header .cont-header .logo .cont-logo .icono {
+    background-image: url(../imagenes/LilyBolivar.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .cont-header .logo .cont-logo .icono:hover {
+    border: none;
+    transition: all 1s;
+}
+
+header .cont-header .logo .cont-logo .nombre {
+    display: none;
+    overflow: hidden;
+    line-height: 70px;
+}
+
+@media (max-width: 600px) {
+    header .cont-header .menu {
+        background: red;
+        display: none;
+    }
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35vh 0;
+    /* background: cadetblue;*/
+    background: #112637;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner-img {
+    width: 100%;
+    min-height: 100vh;
+    margin-block-start: -100vh;
+    background: transparent;
+    background-image: url(../imagenes/LilyBolivarLeft3.png);
+    background-size: auto 150vh;
+    ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: initial;
+}
+
+main {
+    width: 100%;
+}
+
+#contacto {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#contacto #formulario {
+    width: 450px;
+    margin: auto;
+}
+
+#contacto #formulario input,
+#contacto #formulario button,
+#contacto #formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+#contacto #formulario textarea {
+    max-width: 100%;
+}
+
+#contacto #formulario button {
+    padding: 15px;
+    background: deepskyblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.audio-autoplay {
+    display: block;
+    width: 250px;
+    height: 123px;
+    margin: auto;
+    text-align: center;
+}
+
+.audio-autoplay #playpause {
+    width: 90px;
+    height: 90px;
+    border: 2px solid;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+    transition: all 1s;
+}
+
+.audio-autoplay #playpause .icon-controller {
+    font-size: 50px;
+    display: block;
+    padding: 20px;
+}
+
+.audio-autoplay:hover #time,
+.audio-autoplay:hover #volume,
+.audio-autoplay:hover #volume-icon {
+    opacity: 1;
+}
+
+label {
+    display: block;
+}
+
+label #volume-icon {
+    color: rgba(34, 34, 34, 0.5);
+    transition: all 1s;
+    opacity: 0;
+}
+
+#volume {
+    width: 90px;
+    transition: all 1s;
+    opacity: 0;
+}
+
+#volume[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+#volume[type=range]::-webkit-slider-runnable-track {
+    width: 0px;
+    height: 10px;
+    background: rgba(34, 34, 34, 0.3);
+    border: none;
+    border-radius: 7px;
+}
+
+#volume[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 8px;
+    background: #eee;
+    border-radius: 7.5px;
+}
+
+#volume[type=range]:focus {
+    outline: none;
+}
+
+#volume[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(34, 34, 34, 0.3);
+}
+
+#time {
+    width: 250px;
+    opacity: .7;
+    transition: all 1s;
+}
+
+#time[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+#time[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 3px;
+    background: rgba(238, 238, 238, 0.4);
+    border: none;
+    border-radius: 7px;
+}
+
+#time[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#time[type=range]:focus {
+    outline: none;
+}
+
+#time[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(238, 238, 238, 0.4);
+}
+
+.lista-audio {
+    /*min-height: 89.5vh;*/
+    max-height: 50vh;
+}
+
+.play-music {
+    background: #fff;
+}
+
+.play-music .play-list li {
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.play-music .play-list #controller audio {
+    width: 100%;
+}
